@@ -67,10 +67,10 @@ class productCard extends HTMLElement{
 
         .container{
           display: flex;
+          flex-flow: row wrap;
           width: 100%;
           height: 100%;
           flex-direction: row wrap;
-
         }
         .container__img{
           position: relative;
@@ -114,10 +114,12 @@ class productCard extends HTMLElement{
         }
         .container__title h2{
           font-size:4rem;
+          color: #646464;
         }
         .container__title span{
           font-size:3rem;
           letter-spacing:2.5px;
+          color: #8E8E8F;
         }
         .container__text{
           text-align: justify;
@@ -132,19 +134,134 @@ class productCard extends HTMLElement{
         .container__footer h3{
           font-size:3.5rem;
           letter-spacing:1px;
+          color: #646464;
         }
         .container__footer button{
           padding:10px 20px;
           border-radius:5px;
           border:none;
           color:white;
-          background: purple;
+          background: rgb(90,103,176);
+        }
+        .container__footer button:hover{
+          border: 1px solid rgb(90,103,176);
+          background: white;
+          color: rgb(90,103,176);
+          cursor: pointer;
+        }
+        @media only screen and (max-width:1200px){
+          .container__img img{
+            width:105vh;
+          }
+        }
+        @media only screen and (max-width:1120px){
+          .container__img img{
+            width:100vh;
+          }
         }
         @media only screen and (max-width:1024px){
-          
+          .container__title h2{
+            font-size:3rem;
+            color: #646464;
+          }
+          .container__img img{
+            width:105vh;
+            left:-25%;
+            width:110vh;
+          }
         }
-        @media only screen and (max-width:920px){
-          
+        @media only screen and (max-width:950px){
+          .container__img img{
+            width:100vh;
+          }
+        }
+        @media only screen and (max-width:900px){
+          .container__img img{
+            width:100vh;
+          }
+        }
+        @media only screen and (max-width:850px){
+          .container__img img{
+            width:105vh;
+            left:-40%;
+          }
+        }
+        @media only screen and (max-width:800px){
+          .container__img img{
+            width:95vh;
+            left:-40%;
+          }
+          .container__footer h3 {
+            font-size: 2.8rem;
+          }
+        }
+        @media only screen and (max-width:750px){
+          .container__img img{
+            width:95vh;
+            left:-40%;
+          }
+          .container__details{
+            padding:2rem;
+          }
+        }
+        @media only screen and (max-width:690px){
+          .container__img img{
+            width:87vh;
+            left:-35%;
+          }
+          .container__text{
+            margin-left:5%;
+          }
+        }
+        @media only screen and (max-width:650px){
+          .container__img img{
+            width:80vh;
+            left:-40%;
+          }
+        }
+        @media only screen and (max-width:610px){
+          :host{
+            height: 90vh;
+          }
+          .container__img img{
+            width:70vh;
+            left:-30%;
+            bottom:10%;
+          }
+        }
+        @media only screen and (max-width:578px){
+          .container__img img{
+            width:60vh;
+            left:-25%;
+            bottom:10%;
+          }
+        }
+        @media only screen and (max-width:530px){
+          .container__img img{
+            width:65vh;
+            left:-40%;
+          }
+        }
+        @media only screen and (max-width:490px){
+          :host{
+            height:100vh;
+            width: 100%;
+            background:green;
+            padding:0;
+            margin:0;
+          }
+          .container{
+            height:50%;
+            padding:0;
+            margin:0;
+          }
+          .container__img{
+            width:100%;
+            backgorund:blue;
+          }
+          .container__details{
+            width: 100%;
+          }
         }
       </style>
     `;
