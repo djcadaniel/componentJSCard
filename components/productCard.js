@@ -70,7 +70,6 @@ class productCard extends HTMLElement{
           flex-flow: row wrap;
           width: 100%;
           height: 100%;
-          flex-direction: row wrap;
         }
         .container__img{
           position: relative;
@@ -244,23 +243,51 @@ class productCard extends HTMLElement{
         }
         @media only screen and (max-width:490px){
           :host{
-            height:100vh;
-            width: 100%;
-            background:green;
-            padding:0;
-            margin:0;
+            height: 100vh;
           }
           .container{
-            height:50%;
-            padding:0;
-            margin:0;
+            display:flex;
+            flex-flow: column wrap;
+            min-width:320px;
           }
           .container__img{
-            width:100%;
-            backgorund:blue;
+            width: 100%;
+            height:40%;
+            min-width:290px;
+          }
+          .container__img:before{
+            top:10%;
+          }
+          .container__img img{
+            width:60vw;
+            min-width:200px;
+            left: 35%;
+            bottom:-10%;
           }
           .container__details{
             width: 100%;
+            height:60%;
+          }
+          .container__title{
+            height:auto;
+          }
+          .container__title h2{
+            margin:0;
+          }
+          .container__text{
+            height:auto;
+          }
+          .container__footer{
+            height: 20%;
+          }
+        }
+        @media only screen and (max-width:380px){
+          .container__img:before{
+            top:5%;
+            font-size:7rem;
+          }
+          .container__img img{
+            left:30%;
           }
         }
       </style>
