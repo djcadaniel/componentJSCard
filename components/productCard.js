@@ -99,21 +99,21 @@ class productCard extends HTMLElement{
           align-items: center;
           width:50%;
           height: 100%;
-          padding: 3rem;
+          padding: 2rem;
           font-size: 1.6rem;
           box-sizing:border-box;
         }
         .container__description{
           display:flex;
           flex-direction: column;
+          justify-content: center;
           height:100%;
-        }
-        .container__title{
-          
         }
         .container__title h2{
           font-size:4rem;
           color: #646464;
+          font-family: 'Cairo', sans-serif;
+          font-weight: 600;
         }
         .container__title span{
           font-size:3rem;
@@ -123,6 +123,8 @@ class productCard extends HTMLElement{
         .container__text{
           text-align: justify;
           margin-left:15%;
+          font-family: 'Cairo', sans-serif;
+          font-weight: 400;
         }
         .container__footer{
           display: flex;
@@ -148,14 +150,9 @@ class productCard extends HTMLElement{
           color: rgb(90,103,176);
           cursor: pointer;
         }
-        @media only screen and (max-width:1200px){
+        @media only screen and (max-width:1400px){
           .container__img img{
-            width:105vh;
-          }
-        }
-        @media only screen and (max-width:1120px){
-          .container__img img{
-            width:100vh;
+            width:55vw;
           }
         }
         @media only screen and (max-width:1024px){
@@ -164,84 +161,20 @@ class productCard extends HTMLElement{
             color: #646464;
           }
           .container__img img{
-            width:105vh;
-            left:-25%;
-            width:110vh;
-          }
-        }
-        @media only screen and (max-width:950px){
-          .container__img img{
-            width:100vh;
-          }
-        }
-        @media only screen and (max-width:900px){
-          .container__img img{
-            width:100vh;
-          }
-        }
-        @media only screen and (max-width:850px){
-          .container__img img{
-            width:105vh;
-            left:-40%;
+            width:70vw;
           }
         }
         @media only screen and (max-width:800px){
-          .container__img img{
-            width:95vh;
-            left:-40%;
-          }
           .container__footer h3 {
             font-size: 2.8rem;
           }
         }
         @media only screen and (max-width:750px){
-          .container__img img{
-            width:95vh;
-            left:-40%;
-          }
           .container__details{
             padding:2rem;
           }
         }
-        @media only screen and (max-width:690px){
-          .container__img img{
-            width:87vh;
-            left:-35%;
-          }
-          .container__text{
-            margin-left:5%;
-          }
-        }
-        @media only screen and (max-width:650px){
-          .container__img img{
-            width:80vh;
-            left:-40%;
-          }
-        }
-        @media only screen and (max-width:610px){
-          :host{
-            height: 90vh;
-          }
-          .container__img img{
-            width:70vh;
-            left:-30%;
-            bottom:10%;
-          }
-        }
-        @media only screen and (max-width:578px){
-          .container__img img{
-            width:60vh;
-            left:-25%;
-            bottom:10%;
-          }
-        }
-        @media only screen and (max-width:530px){
-          .container__img img{
-            width:65vh;
-            left:-40%;
-          }
-        }
-        @media only screen and (max-width:490px){
+        @media only screen and (max-width:720px){
           :host{
             height: 100vh;
           }
@@ -253,7 +186,7 @@ class productCard extends HTMLElement{
           .container__img{
             width: 100%;
             height:40%;
-            min-width:290px;
+            min-width:320px;
           }
           .container__img:before{
             top:15%;
@@ -262,14 +195,15 @@ class productCard extends HTMLElement{
           .container__img img{
             width:60vw;
             min-width:300px;
-            left: calc(100% - 340px);
+            left: calc(100% - 580px);
             bottom:-20%;
             transform: rotate(0deg);
           }
           .container__details{
             width: 100%;
             height:60%;
-            padding: 2rem 2rem 0 2rem;
+            padding: 2rem 3rem;
+            min-width:320px;
           }
           .container__description{
             justify-content: space-around;
@@ -290,10 +224,51 @@ class productCard extends HTMLElement{
             height: 20%;
           }
         }
+        @media only screen and (max-width:640px){
+          .container__img img{
+            left: calc(100% - 500px);
+          }
+        }
+        @media only screen and (max-width:580px){
+          .container__img img{
+            left: calc(100% - 450px);
+          }
+        }
+        @media only screen and (max-width:500px){
+          .container__img img{
+            left: calc(100% - 400px);
+          }
+        }
+        @media only screen and (max-width:420px){
+          .container__details{
+            width: 100%;
+            height:60%;
+            padding: 0rem 3rem;
+          }
+          .container__title{
+            height:15%;
+            min-width:320px;
+          }
+          .container__title h2{
+            line-height:3rem;
+            height:10%;
+            margin-top:35px;
+          }
+          .container__footer{
+            height:10%;
+            min-width:320px;
+          }
+          .container__img img{
+            left: calc(100% - 350px);
+          }
+        }
         @media only screen and (max-width:380px){
           .container__img:before{
             top:5%;
             font-size:8rem;
+          }
+          .container__img img{
+            left: calc(100% - 320px);
           }
         }
       </style>
