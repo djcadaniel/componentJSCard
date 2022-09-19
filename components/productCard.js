@@ -256,17 +256,24 @@ class productCard extends HTMLElement{
             min-width:290px;
           }
           .container__img:before{
-            top:10%;
+            top:15%;
+            font-size:10rem;
           }
           .container__img img{
             width:60vw;
-            min-width:200px;
-            left: 35%;
-            bottom:-10%;
+            min-width:300px;
+            left: calc(100% - 340px);
+            bottom:-20%;
+            transform: rotate(0deg);
           }
           .container__details{
             width: 100%;
             height:60%;
+            padding: 2rem 2rem 0 2rem;
+          }
+          .container__description{
+            justify-content: space-around;
+            height: 100%;
           }
           .container__title{
             height:auto;
@@ -276,6 +283,8 @@ class productCard extends HTMLElement{
           }
           .container__text{
             height:auto;
+            font-size: 1.8rem;
+            margin:0;
           }
           .container__footer{
             height: 20%;
@@ -284,10 +293,7 @@ class productCard extends HTMLElement{
         @media only screen and (max-width:380px){
           .container__img:before{
             top:5%;
-            font-size:7rem;
-          }
-          .container__img img{
-            left:30%;
+            font-size:8rem;
           }
         }
       </style>
